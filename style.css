@@ -1,0 +1,54 @@
+body{
+    background-color:coral; 
+}
+#div1,#div2,#div3,#div4,#div5,#div6,#div7,#div8,#div9{
+    border: 1px solid black;
+    height: 100px;
+    width: 100px;
+    float: left;
+    font-size: 70px;
+    text-align: center;
+}
+#div1,#div4,#div7{
+    clear: left;
+    border-left:none ;
+}
+#div1,#div2,#div3{
+    border-top: none;
+}
+#div3,#div6,#div9{
+    border-right: none;
+}
+#div7,#div8,#div9{
+    border-bottom: none;
+}
+#main{
+    margin-left: 100px;
+    margin-top: 50px; 
+    position: relative;
+    left:35%;
+   
+}
+.glow {
+    font-size: 80px;
+    color: red;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
+
+  @media screen and (max-width :600px ){
+    #main{
+        margin-left: 8px;
+        margin-top: 50px;   
+    }
+  }
